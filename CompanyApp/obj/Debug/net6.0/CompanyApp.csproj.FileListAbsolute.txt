@@ -1,0 +1,15 @@
+C:\Users\HP\source\repos\CompanyApp\CompanyApp\bin\Debug\net6.0\CompanyApp.exe
+C:\Users\HP\source\repos\CompanyApp\CompanyApp\bin\Debug\net6.0\CompanyApp.deps.json
+C:\Users\HP\source\repos\CompanyApp\CompanyApp\bin\Debug\net6.0\CompanyApp.runtimeconfig.json
+C:\Users\HP\source\repos\CompanyApp\CompanyApp\bin\Debug\net6.0\CompanyApp.dll
+C:\Users\HP\source\repos\CompanyApp\CompanyApp\bin\Debug\net6.0\CompanyApp.pdb
+C:\Users\HP\source\repos\CompanyApp\CompanyApp\obj\Debug\net6.0\CompanyApp.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\CompanyApp\CompanyApp\obj\Debug\net6.0\CompanyApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\CompanyApp\CompanyApp\obj\Debug\net6.0\CompanyApp.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\CompanyApp\CompanyApp\obj\Debug\net6.0\CompanyApp.AssemblyInfo.cs
+C:\Users\HP\source\repos\CompanyApp\CompanyApp\obj\Debug\net6.0\CompanyApp.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\CompanyApp\CompanyApp\obj\Debug\net6.0\CompanyApp.dll
+C:\Users\HP\source\repos\CompanyApp\CompanyApp\obj\Debug\net6.0\refint\CompanyApp.dll
+C:\Users\HP\source\repos\CompanyApp\CompanyApp\obj\Debug\net6.0\CompanyApp.pdb
+C:\Users\HP\source\repos\CompanyApp\CompanyApp\obj\Debug\net6.0\CompanyApp.genruntimeconfig.cache
+C:\Users\HP\source\repos\CompanyApp\CompanyApp\obj\Debug\net6.0\ref\CompanyApp.dll
