@@ -12,22 +12,56 @@ namespace DataAccess.Repositories
     {
         public bool Create(Department obj)
         {
-            throw new NotImplementedException();
+            try
+            {
+               DBContext.Departments.Add(obj);
+                return true;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public bool Delete(Department obj)
         {
-            throw new NotImplementedException();
+            try
+            {
+                DBContext.Departments.Remove(obj);
+                return true;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
-        public Department Get(Department obj)
+        public Department Get(Predicate<Department> predicate)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return DBContext.Departments.Find(predicate);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
-        public List<Department> GetAll()
+        public List<Department> GetAll(Predicate<Department> predicate)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return predicate == null ? DBContext.Departments : DBContext.Departments.FindAll(predicate);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public bool Update(Department obj)

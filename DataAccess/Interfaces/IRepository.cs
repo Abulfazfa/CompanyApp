@@ -12,7 +12,7 @@ namespace DataAccess.Interfaces
         bool Create(T obj);
         bool Update(T obj);
         bool Delete(T obj);
-        T Get(T obj);
-        List<T> GetAll();
+        T Get(Predicate<T>predicate);
+        List<T> GetAll(Predicate<T>predicate);
     }
 }

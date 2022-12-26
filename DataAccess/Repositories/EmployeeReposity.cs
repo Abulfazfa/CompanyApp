@@ -12,27 +12,64 @@ namespace DataAccess.Repositories
     {
         public bool Create(Employee obj)
         {
-            throw new NotImplementedException();
+            try
+            {
+                DBContext.Employees.Add(obj);
+                return true;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public bool Delete(Employee obj)
         {
-            throw new NotImplementedException();
+            try
+            {
+                DBContext.Employees.Remove(obj);
+                return true;
+            }
+            catch (Exception)
+            {
+                throw;
+            }           
         }
 
-        public Employee Get(Employee obj)
+        public Employee Get(Predicate<Employee> predicate)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return DBContext.Employees.Find(predicate);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
-        public List<Employee> GetAll()
+        public List<Employee> GetAll(Predicate<Employee>predicate = null)
         {
-            throw new NotImplementedException();
+            try
+            {            
+                return predicate == null ? DBContext.Employees: DBContext.Employees.FindAll(predicate);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public bool Update(Employee obj)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return default;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }
