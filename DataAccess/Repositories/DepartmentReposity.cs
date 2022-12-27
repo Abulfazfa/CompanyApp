@@ -66,7 +66,13 @@ namespace DataAccess.Repositories
 
         public bool Update(Department obj)
         {
-            throw new NotImplementedException();
+            Department department = Get(department => department.Id == obj.Id);
+            if (department != null)
+            {
+                department = obj;
+                return true;
+            }
+            return false;
         }
     }
 }

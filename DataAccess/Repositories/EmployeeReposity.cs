@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Repositories
 {
-    internal class EmployeeReposity : IRepository<Employee>
+    public class EmployeeReposity : IRepository<Employee>
     {
         public bool Create(Employee obj)
         {
@@ -64,7 +64,13 @@ namespace DataAccess.Repositories
         {
             try
             {
-                return default;
+                Employee employee = Get(emp => emp.Id == obj.Id);
+                if (employee != null)
+                {
+                    employee = obj;
+                    return true;
+                }
+                return false;
             }
             catch (Exception)
             {
