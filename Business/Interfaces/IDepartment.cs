@@ -11,7 +11,7 @@ namespace Business.Interfaces
     {
         void Create(Department department);
         void Update(int id);
-        void Delete(string name, string surname);
+        void Delete(string name);
         Department GetById(int id);
         List<Department> GetAll();
     }

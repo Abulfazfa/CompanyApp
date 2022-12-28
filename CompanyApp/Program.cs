@@ -1,59 +1,93 @@
-﻿Console.WriteLine("1 - Create Department\n" +
-    "2 - Update Department\n" +
-    "3 - Delete Department\n" +
-    "4 - Get department  by id\n" +
-    "5 - Get all departments\n" +
-    "6 - Search method for departments\n" +
-    "7 - Create employee\n" +
-    "8 - Update employee\n" +
-    "9 -  Get employee by id\n" +
-    "10 - Delete employee\n" +
-    "11 - Get employees by age\n" +
-    "12 - Get employees by departmentId\n" +
-    "13 - Get all employees  by departmentName\n" +
-    "14 - Search method for employees by name or surname\n" +
-    "15 - Get all employees count\n");
-string menuNumber = Console.ReadLine();
+﻿using Business.Services;
+using Domain.Models;
+using System.Net.Mail;
+using System.Xml.Linq;
+using Utilities.Helpers;
+
+DepartmentService departmentService = new();
+Helper Helper = new();
+Helper.MessageAndItsColor(ConsoleColor.White,MessageConstants.WelcomeMessage);
+Helper.MessageAndItsColor(ConsoleColor.Green,MessageConstants.MenuMessage);
+
 int number;
-bool result = int.TryParse(menuNumber, out number);
 while (true)
 {
+    string menuNumber = Console.ReadLine();
+    bool result = int.TryParse(menuNumber, out number);
     if (result && number < 16 && number > 0)
     {
         switch (number)
-        {
-            case 0:
-                break; 
+        {          
             case 1:
+                Helper.MessageAndItsColor(ConsoleColor.Magenta,MessageConstants.DepartmentName);
+                string name = Console.ReadLine();
+                EnterDepartmantCapacity: Helper.MessageAndItsColor(ConsoleColor.Magenta,MessageConstants.DepartmentCapasity);
+                int capasity;
+                string capasityAcceptor = Console.ReadLine();
+                bool check_capacity = int.TryParse(capasityAcceptor, out capasity);
+                if (check_capacity)
+                {
+                    Department department = new();
+                    department.Name = name;
+                    department.Capasity = capasity;
+                    departmentService.Create(department);
+                    Console.WriteLine($"{name} {MessageConstants.DepartmentCreate}");
+                }
+                else
+                {
+                    Console.WriteLine(MessageConstants.WrongNumber);
+                    goto EnterDepartmantCapacity; 
+                }
                 break;
             case 2:
+                UpdateDepartmant: Console.WriteLine(MessageConstants.DepartmentId);
+                int id;
+                string IdAcceptor = Console.ReadLine();
+                if (int.TryParse(IdAcceptor, out id))
+                {
+                    departmentService.Update(id);
+                    Console.WriteLine(MessageConstants.DepartmentUpdate);
+                }
+                else
+                {
+                    Console.WriteLine(MessageConstants.WrongNumber);
+                    goto UpdateDepartmant;
+                }
                 break;
             case 3:
+                string department_name = Console.ReadLine();
+                if ()
+                {
+                    //varmi yoxla
+                }
+                departmentService.Delete();
                 break;
-                case 4:
-                    break;
-                case 5:
-                    break;
-                case 6:
-                    break;
-                case 7:
-                    break;
-                case 8:
-                    break;
-                case 9:
-                    break;
-                case 10:
-                    break;
-                case 11:
-                    break;
-                case 12:
-                    break;
-                case 13:
-                    break;
-                case 14:
-                    break;
-                case 15:
-                    break;
+            case 4:
+                departmentService.GetById();
+                break;
+            case 5:
+                departmentService.GetAll();
+                break;
+            case 6:
+                break;
+            case 7:
+                break;
+            case 8:
+                break;
+            case 9:
+                break;
+            case 10:
+                break;
+            case 11:
+                break;
+            case 12:
+                break;
+            case 13:
+                break;
+            case 14:
+                break;
+            case 15:
+                break;
             default:
                 break;
         }

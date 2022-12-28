@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Abulfazfa\\Desktop\\CompanyApp\\DataAccess\\DataAccess.csproj": {}
+    "C:\\Users\\HP\\source\\repos\\CompanyApp\\DataAccess\\DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Abulfazfa\\Desktop\\CompanyApp\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\HP\\source\\repos\\CompanyApp\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Abulfazfa\\Desktop\\CompanyApp\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\CompanyApp\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\Abulfazfa\\Desktop\\CompanyApp\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\Abulfazfa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Abulfazfa\\Desktop\\CompanyApp\\DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\HP\\source\\repos\\CompanyApp\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\source\\repos\\CompanyApp\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Abulfazfa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Abulfazfa\\Desktop\\CompanyApp\\Entities\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Abulfazfa\\Desktop\\CompanyApp\\Entities\\Domain.csproj"
+              "C:\\Users\\HP\\source\\repos\\CompanyApp\\Entities\\Domain.csproj": {
+                "projectPath": "C:\\Users\\HP\\source\\repos\\CompanyApp\\Entities\\Domain.csproj"
               }
             }
           }
@@ -59,21 +59,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Abulfazfa\\Desktop\\CompanyApp\\Entities\\Domain.csproj": {
+    "C:\\Users\\HP\\source\\repos\\CompanyApp\\Entities\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Abulfazfa\\Desktop\\CompanyApp\\Entities\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\CompanyApp\\Entities\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Abulfazfa\\Desktop\\CompanyApp\\Entities\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Abulfazfa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Abulfazfa\\Desktop\\CompanyApp\\Entities\\obj\\",
+        "projectPath": "C:\\Users\\HP\\source\\repos\\CompanyApp\\Entities\\Domain.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\source\\repos\\CompanyApp\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Abulfazfa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -114,7 +114,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

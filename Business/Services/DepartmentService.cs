@@ -41,7 +41,7 @@ namespace Business.Services
             throw new NotImplementedException();
         }
 
-        public void Delete(string name, string surname)
+        public void Delete(string name)
         {
             throw new NotImplementedException();
         }

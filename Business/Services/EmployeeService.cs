@@ -23,15 +23,18 @@ namespace Business.Services
         {
             try
             {
-                if (employeeRepository.Get(emp => emp.Name == employee.Name) == null)
+                if (employeeRepository.Get(emp => emp.Name.ToLower() == employee.Name.ToLower()) == null)
                 {
                     employeeRepository.Create(employee);
                 }
             }
             catch (Exception)
             {
+
                 throw;
-            }        
+            }
+            
+            
         }
         public void Delete(int id)
         {
