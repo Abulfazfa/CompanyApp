@@ -30,11 +30,8 @@ namespace Business.Services
             }
             catch (Exception)
             {
-
                 throw;
-            }
-            
-            
+            }        
         }
         public void Delete(int id)
         {
@@ -59,7 +56,8 @@ namespace Business.Services
         }
         public void Update(int id)
         {
-            
+            Employee filtered = employeeRepository.Get(emp => emp.Id == id);
+            employeeRepository.Update(filtered);
         }
     }
 }

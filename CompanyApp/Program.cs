@@ -13,5 +13,51 @@
     "13 - Get all employees  by departmentName\n" +
     "14 - Search method for employees by name or surname\n" +
     "15 - Get all employees count\n");
+string menuNumber = Console.ReadLine();
+int number;
+bool result = int.TryParse(menuNumber, out number);
+while (true)
+{
+    if (result && number < 16 && number > 0)
+    {
+        switch (number)
+        {
+            case 0:
+                break; 
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+                case 4:
+                    break;
+                case 5:
+                    break;
+                case 6:
+                    break;
+                case 7:
+                    break;
+                case 8:
+                    break;
+                case 9:
+                    break;
+                case 10:
+                    break;
+                case 11:
+                    break;
+                case 12:
+                    break;
+                case 13:
+                    break;
+                case 14:
+                    break;
+                case 15:
+                    break;
+            default:
+                break;
+        }
+    }
+}
 
 

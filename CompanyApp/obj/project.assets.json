@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {}
+    "C:\\Users\\Abulfazfa\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\source\\repos\\CompanyApp\\CompanyApp\\CompanyApp.csproj",
+      "projectUniqueName": "C:\\Users\\Abulfazfa\\Desktop\\CompanyApp\\CompanyApp\\CompanyApp.csproj",
       "projectName": "CompanyApp",
-      "projectPath": "C:\\Users\\HP\\source\\repos\\CompanyApp\\CompanyApp\\CompanyApp.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\source\\repos\\CompanyApp\\CompanyApp\\obj\\",
+      "projectPath": "C:\\Users\\Abulfazfa\\Desktop\\CompanyApp\\CompanyApp\\CompanyApp.csproj",
+      "packagesPath": "C:\\Users\\Abulfazfa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Abulfazfa\\Desktop\\CompanyApp\\CompanyApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Abulfazfa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
