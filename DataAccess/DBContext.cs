@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess
 {
-    public class DBContext
+    public static class DBContext
     {
         public static List<Employee> Employees { get; set; }
         public static List<Department> Departments { get; set; }

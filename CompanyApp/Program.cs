@@ -1,4 +1,5 @@
 ﻿using Business.Services;
+using CompanyApp.Controllers.Enums;
 using Domain.Models;
 using System.Net.Mail;
 using System.Xml.Linq;
@@ -6,19 +7,22 @@ using Utilities.Helpers;
 
 DepartmentService departmentService = new();
 Helper Helper = new();
-Helper.MessageAndItsColor(ConsoleColor.White,MessageConstants.WelcomeMessage);
-Helper.MessageAndItsColor(ConsoleColor.Green,MessageConstants.MenuMessage);
+Helper.MessageAndItsColor(ConsoleColor.White, MessageConstants.WelcomeMessage);
+
+
 
 int number;
 while (true)
 {
+    Helper.MessageAndItsColor(ConsoleColor.Yellow, MessageConstants.ChooseNumberMessage);
+    Helper.MessageAndItsColor(ConsoleColor.Green, MessageConstants.MenuMessage);
     string menuNumber = Console.ReadLine();
     bool result = int.TryParse(menuNumber, out number);
     if (result && number < 16 && number > 0)
     {
         switch (number)
         {          
-            case 1:
+            case(int)MenuController.CreateDepartment:
                 Helper.MessageAndItsColor(ConsoleColor.Magenta,MessageConstants.DepartmentName);
                 string name = Console.ReadLine();
                 EnterDepartmantCapacity: Helper.MessageAndItsColor(ConsoleColor.Magenta,MessageConstants.DepartmentCapasity);
@@ -39,7 +43,7 @@ while (true)
                     goto EnterDepartmantCapacity; 
                 }
                 break;
-            case 2:
+            case (int)MenuController.UpdateDepartment:
                 UpdateDepartmant: Console.WriteLine(MessageConstants.DepartmentId);
                 int id;
                 string IdAcceptor = Console.ReadLine();
@@ -54,40 +58,39 @@ while (true)
                     goto UpdateDepartmant;
                 }
                 break;
-            case 3:
+            case (int)MenuController.DeleteDepartment:
                 string department_name = Console.ReadLine();
-                if ()
-                {
+                
                     //varmi yoxla
-                }
-                departmentService.Delete();
+
                 break;
-            case 4:
-                departmentService.GetById();
+            case (int)MenuController.GetDepartmentById:
+                
                 break;
-            case 5:
+            case (int)MenuController.GetAllDepartments:
                 departmentService.GetAll();
                 break;
-            case 6:
+            case (int)MenuController.SearchMethodforDepartments:
                 break;
-            case 7:
+            case (int)MenuController.CreateEmployee:
                 break;
-            case 8:
+            case (int)MenuController.UpdateEmployee:
                 break;
-            case 9:
+            case (int)MenuController.GetEmployeeById:
                 break;
-            case 10:
+            case (int)MenuController.DeleteEmployee:
                 break;
-            case 11:
+            case (int)MenuController.GetEmployeesByAge:
                 break;
-            case 12:
+            case (int)MenuController.GetEmployeesByDepartmentId:
                 break;
-            case 13:
+            case (int)MenuController.GetAllEmployeesByDepartmentName:
                 break;
-            case 14:
+            case (int)MenuController.SearchMethodforEmployeesByNameOrSurname:
                 break;
-            case 15:
+            case (int)MenuController.GetAllEmployeesCount:
                 break;
+      
             default:
                 break;
         }

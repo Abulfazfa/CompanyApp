@@ -8,7 +8,8 @@ namespace Utilities.Helpers
 {
     public static class MessageConstants
     {
-        public const string WelcomeMessage = "Welcome, please sellect one number";
+        public const string WelcomeMessage = "Welcome!!!";
+        public const string ChooseNumberMessage = "Please sellect one number";
         public const string MenuMessage = "1 - Create Department\n" +
     "2 - Update Department\n" +
     "3 - Delete Department\n" +
@@ -23,7 +24,7 @@ namespace Utilities.Helpers
     "12 - Get employees by departmentId\n" +
     "13 - Get all employees  by departmentName\n" +
     "14 - Search method for employees by name or surname\n" +
-    "15 - Get all employees count\n";
+    "15 - Get all employees count";
         public const string DepartmentName = "Please enter the department's name";
         public const string DepartmentCapasity = "Please enter the department's capasity";
         public const string DepartmentCreate = "department is created successfully";
