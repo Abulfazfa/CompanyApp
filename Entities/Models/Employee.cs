@@ -10,11 +10,19 @@ namespace Domain.Models
     public class Employee : IEntity
     {
         public int Id { get; set; }
+        public static int Counter { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public int Age { get; set; }
         public string Address { get; set; }
         public int DepartmentId { get; set; }
-        public DateTime CreatingTime { get; set; }
+
+        // public DateTime CreatingTime { get; set; }
+
+        public Employee()
+        {
+            Counter++;
+            Id = Counter;
+        }
     }
 }

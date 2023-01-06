@@ -22,7 +22,6 @@ namespace DataAccess.Repositories
                 throw;
             }
         }
-
         public bool Delete(Employee obj)
         {
             try

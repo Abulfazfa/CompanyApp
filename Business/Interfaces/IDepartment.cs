@@ -9,9 +9,9 @@ namespace Business.Interfaces
 {
     public interface IDepartment
     {
-        void Create(Department department);
-        void Update(int id);
-        void Delete(string name);
+        bool Create(Department department);
+        bool Update(string name, Department department);
+        bool Delete(string name);
         Department GetById(int id);
         List<Department> GetAll();
     }

@@ -9,12 +9,12 @@ namespace Business.Interfaces
 {
     public interface IEmployee
     {
-        void Create(Employee employee);
-        void Update(int id);
-        void Delete(int id);
+        bool Create(Employee employee);
+        bool Update(string name, Employee employee);
+        bool Delete(string name);
         Employee GetById(int id);
-        Employee GetByAge(int age);
-        Employee GetByDepartmentId(int departmentId);
-        List<Employee> GetAll();
+        List<Employee> GetAllByAge(int age);
+        List<Employee> GetAllByDepartmentId(int departmentId);
+        List<Employee> GetAll(Predicate<Employee>predicate);
     }
 }

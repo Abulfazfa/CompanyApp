@@ -51,7 +51,7 @@ namespace DataAccess.Repositories
             }
         }
 
-        public List<Department> GetAll(Predicate<Department> predicate)
+        public List<Department> GetAll(Predicate<Department> predicate = null)
         {
             try
             {
