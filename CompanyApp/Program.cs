@@ -15,6 +15,11 @@ Helper.MessageAndItsColor(ConsoleColor.White, MessageConstants.WelcomeMessage);
 int number;
 while (true)
 {
+    //Console.WriteLine((MenuEnums[])Enum.GetValues(typeof(MenuEnums)).Length.ToString);
+    //foreach (MenuEnums @enum in (MenuEnums[])Enum.GetValues(typeof(MenuEnums)))
+    //{
+    //    Console.WriteLine((int)@enum);
+    //}
     Helper.MessageAndItsColor(ConsoleColor.Yellow, MessageConstants.ChooseNumberMessage);
     Helper.MessageAndItsColor(ConsoleColor.Green, MessageConstants.MenuMessage);
     string menuNumber = Console.ReadLine();
@@ -67,6 +72,9 @@ while (true)
                 break;
             case (int)MenuEnums.GetAllEmployeesCount:
                 employeeController.GetAllEmployeesCount();
+                break;
+            case (int)MenuEnums.GetAllEmployees:
+                employeeController.GetAllEmployees();
                 break;
             case (int)MenuEnums.ExitProgram:
                 return;

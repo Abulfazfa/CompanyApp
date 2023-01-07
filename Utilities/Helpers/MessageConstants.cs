@@ -25,7 +25,8 @@ namespace Utilities.Helpers
     "13 - Get all employees  by departmentName\n" +
     "14 - Search method for employees by name or surname\n" +
     "15 - Get all employees count\n" +
-    "16 - Exit Program";
+    "16 - Get all employees \n" +
+    "17 - Exit Program";
         public const string DepartmentName = "Please enter the department's name";
         public const string DepartmentCapasity = "Please enter the department's capasity";
         public const string DepartmentCreated = "department is created successfully";

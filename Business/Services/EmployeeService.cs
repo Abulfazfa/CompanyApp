@@ -141,11 +141,15 @@ namespace Business.Services
                             {
                                 department.MemberCount--;
                                 department1.MemberCount++;
-
+                                
                                 filtered.DepartmentId = employee.DepartmentId;
                             }
-                            Console.WriteLine("You");
-                            return false;
+                            else
+                            {
+                                Console.WriteLine("Errorr");
+                                return false;
+                            }
+                            
                         }
                         employeeRepository.Update(filtered);
                         return true;

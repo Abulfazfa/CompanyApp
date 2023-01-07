@@ -23,6 +23,8 @@ namespace Utilities.Helpers
             GetAllEmployeesByDepartmentName,
             SearchMethodforEmployeesByNameOrSurname,
             GetAllEmployeesCount,
+            GetAllEmployees,
+
             ExitProgram
         
         }

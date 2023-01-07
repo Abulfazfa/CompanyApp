@@ -342,6 +342,15 @@ namespace CompanyApp.Controllers
             }
             Console.WriteLine($"{MessageConstants.EmployeeCount} {count} \n");  
         }
+        public void GetAllEmployees()
+        {
+            int count = 0;
+            foreach (var item in employeeService.GetAll())
+            {
+                FullInfo(item);
+            }
+           
+        }
         private bool SureMessage()
         {
             string? name = Console.ReadLine();
